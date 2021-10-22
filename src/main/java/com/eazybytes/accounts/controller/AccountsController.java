@@ -49,6 +49,7 @@ public class AccountsController {
 
 		Accounts accounts = accountsRepository.findByCustomerId(customer.getCustomerId());
 		if (accounts != null) {
+
 			return accounts;
 		} else {
 			return null;
